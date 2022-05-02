@@ -1,15 +1,16 @@
-﻿using System;
+using System;
 
 class Program
 {
     static void Main(string[] args)
     {
         int timeForOnePerson = 10;
+        int MinutesInHour = 60
         Console.WriteLine("Введите кол-во старушек:");
         int numberOfPerson = int.Parse(Console.ReadLine());
         int timeForWaitInMinutes = timeForOnePerson * numberOfPerson;
-        int timeForWaitInHours = timeForWaitInMinutes / 60;
-        timeForWaitInMinutes = timeForWaitInMinutes - (timeForWaitInHours * 60);
+        int timeForWaitInHours = timeForWaitInMinutes / MinutesInHour;
+        timeForWaitInMinutes = timeForWaitInMinutes - (timeForWaitInHours * MinutesInHour);
         if (timeForWaitInHours != 0 & timeForWaitInMinutes != 0)
         {
             Console.WriteLine("Вы должны отстоять в очереди {0} часа и {1} минут.", timeForWaitInHours, timeForWaitInMinutes);
