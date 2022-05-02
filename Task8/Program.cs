@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         int timeForOnePerson = 10;
-        int minutesInHour = 60
+        int minutesInHour = 60;
         Console.WriteLine("Введите кол-во старушек:");
         int numberOfPerson = int.Parse(Console.ReadLine());
         int timeForWaitInMinutes = timeForOnePerson * numberOfPerson;
