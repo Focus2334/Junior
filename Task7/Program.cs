@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Program
 {
@@ -9,9 +9,9 @@ class Program
         int totalGold = int.Parse(Console.ReadLine());
         Console.WriteLine("Сколько кристаллов вы хотите купить за золото по цене {0}?", cristallPrice);
         int numberOfCristallToBuy = int.Parse(Console.ReadLine());
-        int remainGold = totalGold - (cristallPrice * numberOfCristallToBuy);
+        totalGold = totalGold - (cristallPrice * numberOfCristallToBuy);
         Console.WriteLine("Вы купили {0} кристаллов", numberOfCristallToBuy);
-        Console.WriteLine("У вас осталось {0} золота", remainGold);
+        Console.WriteLine("У вас осталось {0} золота", totalGold);
 
     }
 }
